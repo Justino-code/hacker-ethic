@@ -9,7 +9,7 @@ export default function Artigos() {
     {
       id: 1,
       titulo: "Introdução à Cibersegurança",
-      imagem: "/assets/cybersecurity.jpg",
+      imagem: "./assets/cybersecurity.jpg",
       descricao:
         "Descubra os conceitos básicos de cibersegurança, proteção de dados e como manter sistemas seguros contra ataques.",
       componente: <IntroducaoCiberseguranca />,
@@ -24,7 +24,7 @@ export default function Artigos() {
     {
       id: 2,
       titulo: "Técnicas de Hacking Ético",
-      imagem: "/assets/ethical-hacking.jpg",
+      imagem: "./assets/ethical-hacking.jpeg",
       descricao:
         "Explore ferramentas e técnicas usadas por hackers éticos para testar a segurança de sistemas e redes.",
       componente: <TecnicasHackingEtico />,
@@ -39,7 +39,7 @@ export default function Artigos() {
     {
       id: 3,
       titulo: "Segurança de Redes",
-      imagem: "/assets/network-security.jpg",
+      imagem: "/assets/network-security.jpeg",
       descricao:
         "Saiba como proteger redes de computadores, identificar vulnerabilidades e aplicar boas práticas de administração segura.",
       componente: <SegurancaRedes />,
