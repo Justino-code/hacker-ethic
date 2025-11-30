@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function JogoVulnerabilidadeCodigo() {
+export default function VulnerabilidadeCodigo() {
   const desafios = [
     {
       codigo: `

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function JogoFirewall() {
+export default function SimularFirewall() {
   const pacotes = [
     { id: 1, nome: "Requisição HTTP legítima", tipo: "permitir" },
     { id: 2, nome: "Tentativa de SQL Injection", tipo: "bloquear" },

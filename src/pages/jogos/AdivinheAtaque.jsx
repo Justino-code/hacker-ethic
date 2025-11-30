@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function JogoAdivinheAtaque() {
+export default function AdivinheAtaque() {
   const perguntas = [
     {
       pergunta: "Um ataque onde o invasor tenta adivinhar senhas repetidamente é chamado de:",
