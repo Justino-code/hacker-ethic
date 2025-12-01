@@ -20,7 +20,6 @@ export default function Navbar() {
     { path: "/artigo", icon: <FaBook size={16} />, label: "Artigo" },
     { path: "/audio", icon: <FaMusic size={16} />, label: "Áudio" },
     { path: "/video", icon: <FaVideo size={16} />, label: "Vídeo" },
-    { path: "/jogos", icon: <FaGamepad size={16} />, label: "Jogos" },
   ];
 
   const isActive = (path) => location.pathname === path;

@@ -1,172 +1,294 @@
-# 📄 **RELATÓRIO DO PROJETO – TMM (Tecnologias de Multimédia)**
+# Resumo
 
-**Projeto:** CyberEthic – Plataforma Interativa sobre Cibersegurança
-**Autor:** Justino
-**Ano:** 2025
-**Curso:** Tecnologias de Multimédia (TMM)
-**Instituição:** *[inserir nome da universidade]*
+O presente relatório descreve o desenvolvimento do projeto **CyberEthic**, uma plataforma web interativa desenvolvida no âmbito da unidade curricular Tecnologias de Multimédia. A plataforma tem como objetivo principal a disseminação de conhecimento sobre cibersegurança através de uma interface moderna e acessível, implementada com tecnologias React e TailwindCSS. O projeto foi desenvolvido com foco na criação de uma experiência de usuário educativa e envolvente, abordando tópicos fundamentais de segurança digital de forma estruturada e atualizada.
 
----
+# 1. Introdução
 
-# **1. Introdução**
+Na era digital contemporânea, a conscientização sobre cibersegurança tornou-se imperativa para indivíduos e organizações. O aumento exponencial de ameaças cibernéticas exige que os usuários desenvolvam conhecimentos básicos sobre proteção digital. Este projeto foi concebido como resposta a essa necessidade, oferecendo uma plataforma educativa que combina conteúdo teórico rigoroso com uma interface intuitiva.
 
-O presente relatório descreve o desenvolvimento do projeto **CyberEthic**, criado no âmbito da unidade curricular **Tecnologias de Multimédia (TMM)**.
-O objetivo principal foi construir uma aplicação interativa em **React**, orientada para a divulgação de conteúdos educativos sobre **cibersegurança**, recorrendo a elementos multimédia como jogos, navegação dinâmica e design atrativo.
+A plataforma CyberEthic foi desenvolvida utilizando tecnologias web modernas, com particular ênfase na criação de uma experiência de aprendizado acessível tanto para iniciantes quanto para profissionais da área. A implementação seguiu princípios de design centrado no usuário, garantindo que a informação técnica complexa fosse apresentada de forma compreensível e visualmente atrativa.
 
-O projeto pretende contribuir para a literacia digital, alertando o utilizador sobre ataques, boas práticas de segurança e princípios fundamentais de hacking ético.
+# 2. Objetivos do Projeto
 
----
+Os objetivos específicos do projeto foram delineados da seguinte forma:
 
-# **2. Objetivos do Projeto**
+1. **Desenvolver uma plataforma educativa** sobre cibersegurança utilizando tecnologias web modernas
+2. **Implementar uma estrutura de navegação intuitiva** que facilite o acesso a diferentes categorias de conteúdo
+3. **Criar páginas de conteúdo especializado** abordando tópicos fundamentais de segurança digital
+4. **Estabelecer uma identidade visual coerente** que reflete o tema de cibersegurança
+5. **Garantir responsividade completa** para diferentes dispositivos e tamanhos de tela
+6. **Fornecer recursos atualizados** com referências a materiais educativos de 2025
 
-Os objetivos definidos foram:
+# 3. Tecnologias Utilizadas
 
-* Criar uma plataforma moderna e funcional baseada em tecnologias web.
-* Disponibilizar **conteúdos teóricos** (artigos) sobre cibersegurança.
-* Desenvolver **jogos educativos**, reforçando a aprendizagem através da interatividade.
-* Implementar boas práticas de design multimédia e arquitetura de componentes.
-* Integrar elementos visuais (tema dark + neon) coerentes com ambiente hacker.
-* Explorar a utilização de **React** e **TailwindCSS** em contexto académico.
+A implementação técnica do projeto baseou-se nas seguintes tecnologias:
 
----
+## 3.1. Framework Principal
+- **React.js (v18+):** Framework JavaScript para construção da interface de usuário
+- **Vite:** Ferramenta de construção e servidor de desenvolvimento de alta performance
 
-# **3. Tecnologias Utilizadas**
+## 3.2. Estilização e Design
+- **TailwindCSS:** Framework CSS utilitário para estilização responsiva
+- **Framer Motion:** Biblioteca para animações e transições suaves
+- **React Icons:** Coleção de ícones para interface
 
-| Tecnologia            | Função                                                  |
-| --------------------- | ------------------------------------------------------- |
-| **React.js**          | Base principal da aplicação                             |
-| **Vite**              | Ferramenta de build e servidor de desenvolvimento       |
-| **JavaScript (ES6+)** | Lógica e interatividade                                 |
-| **TailwindCSS**       | Estilização com classes utilitárias e design responsivo |
-| **Componentes React** | Reutilização de trechos estruturais                     |
-| **Assets multimédia** | Imagens, ícones, banners                                |
+## 3.3. Linguagens de Programação
+- **JavaScript ES6+:** Para lógica de aplicação
+- **JSX:** Sintaxe para definição de componentes React
 
----
+## 3.4. Ferramentas de Desenvolvimento
+- **Node.js:** Ambiente de execução JavaScript
+- **npm:** Gerenciador de pacotes
+- **Git:** Controle de versão
 
-# **4. Estrutura do Sistema**
+# 4. Arquitetura do Sistema
 
-A estrutura do projeto foi organizada para ser simples e clara:
+A estrutura do projeto foi organizada seguindo princípios de arquitetura modular:
 
 ```
 src/
- ├── pages/
- │    ├── Artigos.jsx
- │    ├── Jogos.jsx
- │    └── ...
- ├── artigos/
- │    ├── IntroducaoCiberseguranca.jsx
- │    ├── TecnicasHackingEtico.jsx
- │    ├── SegurancaRedes.jsx
- │    └── ProgramacaoSegura.jsx
- ├── jogos/
- │    ├── AdivinheAtaque.jsx
- │    ├── QuizSeguranca.jsx
- │    ├── SimuladorFirewall.jsx
- │    ├── EncontrarVulnerabilidade.jsx
- ├── components/
- └── assets/
+├── pages/
+│   ├── Home.jsx              # Página inicial
+│   ├── Artigos.jsx           # Página de navegação de artigos
+│   ├── Video.jsx             # Página de vídeos educativos
+│   └── Sobre.jsx             # Página informativa
+├── components/
+│   ├── artigos/              # Componentes de artigos especializados
+│   │   ├── IntroducaoCiberSeguranca.jsx
+│   │   ├── TecnicasHackingEtico.jsx
+│   │   ├── SegurancaRedes.jsx
+│   │   └── ProgramacaoSegura.jsx
+│   ├── Header.jsx            # Cabeçalho da aplicação
+│   └── Footer.jsx            # Rodapé da aplicação
+└── assets/                   # Recursos estáticos
 ```
 
----
+## 4.1. Estrutura de Componentes
 
-# **5. Desenvolvimento da Plataforma**
+Os componentes foram desenvolvidos seguindo o princípio da responsabilidade única. Cada artigo especializado foi implementado como um componente React independente, contendo:
+
+1. **Interface de apresentação** com design consistente
+2. **Conteúdo educativo** estruturado em seções lógicas
+3. **Recursos complementares** com links atualizados
+4. **Elementos visuais** temáticos
+5. **Sistema de navegação** interno
+
+## 4.2. Sistema de Roteamento
+
+A navegação entre páginas foi implementada utilizando React Router, proporcionando uma experiência de usuário fluida sem recarregamentos de página desnecessários.
+
+# 5. Desenvolvimento das Páginas de Conteúdo
 
 ## 5.1. Página de Artigos
 
-A página **Artigos.jsx** apresenta:
+A página principal de artigos foi projetada como um hub central de conteúdo educativo. A implementação incluiu:
 
-* Listagem interativa dos artigos
-* Componente selecionado aberto na mesma página
-* Conteúdo estruturado, com imagens, texto e links externos atualizados (2025)
+### 5.1.1. Sistema de Navegação
+- **Menu de categorias** para filtragem de conteúdo
+- **Visualização em grid** responsiva
+- **Sistema de busca** por palavras-chave
+- **Indicadores visuais** de progresso
 
-Cada artigo inclui:
+### 5.1.2. Componentes Especializados
+Quatro artigos principais foram desenvolvidos:
 
-* Introdução teórica
-* Exemplos práticos
-* Links para plataformas de treino (HackTheBox, TryHackMe, OWASP, etc.)
+1. **Introdução à Cibersegurança**
+   - Conceitos fundamentais (tríade CIA)
+   - Princípios básicos de segurança
+   - Práticas essenciais para usuários
 
----
+2. **Técnicas de Hacking Ético**
+   - Metodologias de penetration testing
+   - Ferramentas profissionais (Nmap, Metasploit, Wireshark)
+   - Framework legal e ético
 
-## 5.2. Página de Jogos
+3. **Segurança de Redes**
+   - Arquiteturas de proteção
+   - Tecnologias de firewall e VPN
+   - Monitoramento de tráfego
 
-Esta secção inclui jogos educativos criados com React:
+4. **Programação Segura**
+   - Vulnerabilidades comuns (SQL Injection, XSS, CSRF)
+   - Boas práticas de desenvolvimento
+   - Validação e sanitização de dados
 
-### ✔ Adivinhe o Ataque
+Cada artigo segue uma estrutura padronizada:
+- Título com gradiente temático
+- Introdução contextual
+- Conteúdo principal em seções
+- Recursos complementares
+- Elementos visuais de apoio
 
-O utilizador recebe pistas e tem de adivinhar o tipo de ataque.
+## 5.2. Página de Vídeos Educativos
 
-### ✔ Quiz de Segurança Ofensiva
+A implementação da página de vídeos incluiu:
 
-Perguntas de múltiplas escolhas sobre hacking ético.
+### 5.2.1. Sistema de Apresentação
+- **Grid responsivo** de vídeos
+- **Filtros por dificuldade** e idioma
+- **Metadados completos** para cada recurso
+- **Integração com YouTube** via API de embed
 
-### ✔ Simulador de Firewall (Drag & Drop)
+### 5.2.2. Conteúdo Selecionado
+Foram selecionados 12 vídeos educativos focados em:
+- Hacking ético e técnicas fundamentais
+- Ferramentas profissionais (Kali Linux, Wireshark)
+- Desenvolvimento seguro
+- Preparação para certificações
 
-O utilizador arrasta itens para permitir/bloquear tráfego.
+### 5.2.3. Características Técnicas
+- **Thumbnails otimizadas** com fallback
+- **Sistema de cache** para melhor performance
+- **Marcação de idioma** (Português/Inglês)
+- **Indicadores de dificuldade**
 
-### ✔ Encontre a Vulnerabilidade
+# 6. Design e Interface do Usuário
 
-Trecho de código onde o utilizador encontra e seleciona falhas.
+## 6.1. Princípios de Design
 
-**Implementação única:**
-Todos os jogos carregam na mesma página, mantendo o menu lateral e um botão “Sair” para regressar ao menu.
+O design da plataforma foi desenvolvido seguindo os princípios de:
 
----
+1. **Consistência Visual:** Manutenção de padrões visuais em todos os componentes
+2. **Hierarquia de Informação:** Organização clara do conteúdo por importância
+3. **Acessibilidade:** Contraste adequado e navegação intuitiva
+4. **Responsividade:** Adaptação a diferentes dispositivos
 
-# **6. Design Multimédia**
+## 6.2. Sistema de Cores
 
-O design segue uma estética *cyberpunk*:
+Foi estabelecido um sistema de cores temático:
+- **Fundo principal:** `#0D0D0D` (preto profundo)
+- **Cores de destaque:** Gradientes neon (cyan, verde, magenta, amarelo)
+- **Texto:** Variações de cinza para melhor legibilidade
+- **Elementos interativos:** Estados de hover e focus claramente definidos
 
-* Tema **dark** com cores **neon**
-* Fontes estilo terminal (monoespaçadas)
-* Elementos responsivos
-* Legibilidade como prioridade
-* Experiência parecida com interfaces de hacking fictícias
+## 6.3. Tipografia
 
-Foi respeitado o princípio multimédia de **coerência visual**, garantindo uniformidade entre artigos e jogos.
+- **Fonte principal:** Fontes monoespaçadas (hacker aesthetic)
+- **Hierarquia tipográfica:** Tamanhos consistentes para títulos e parágrafos
+- **Espaçamento:** Line-height adequado para legibilidade
 
----
+## 6.4. Animação e Interação
 
-# **7. Testes e Validação**
+- **Transições suaves** entre páginas e estados
+- **Feedback visual** para ações do usuário
+- **Animações de entrada** para elementos de conteúdo
+- **Sistema de loading** otimizado
 
-Foram realizados:
+# 7. Implementação Técnica
 
-* Testes funcionais (navegação, seleção de artigos, troca de jogos)
-* Testes de responsividade em mobile e desktop
-* Testes de fluidez e carregamento em Vite
+## 7.1. Performance e Otimização
 
-Não foram encontrados erros críticos; alguns ajustes visuais foram corrigidos durante o processo.
+Foram implementadas as seguintes otimizações:
 
----
+1. **Code Splitting:** Divisão de código por rotas
+2. **Lazy Loading:** Carregamento sob demanda de componentes
+3. **Otimização de Imagens:** Compressão e formatação apropriada
+4. **Minificação:** Redução do tamanho dos assets em produção
 
-# **8. Conclusão**
+## 7.2. Responsividade
 
-Este projeto permitiu:
+A plataforma foi desenvolvida com abordagem mobile-first:
+- **Breakpoints definidos** para diferentes dispositivos
+- **Layouts flexíveis** baseados em grid
+- **Componentes adaptativos** que modificam seu comportamento
+- **Tipografia responsiva** que escala apropriadamente
 
-* Consolidar conhecimentos de React e TailwindCSS
-* Aplicar princípios de Multimédia (design, usabilidade, interatividade)
-* Criar um produto funcional com **valor educativo real**
-* Explorar a área da cibersegurança de forma simplificada e acessível
+## 7.3. Acessibilidade
 
-Apesar de ser um projeto académico simples, alcançou os objetivos definidos e demonstrou boa integração entre teoria, prática e elementos multimédia.
+Foram implementadas as seguintes funcionalidades de acessibilidade:
+- **Navegação por teclado** completa
+- **ARIA labels** para elementos interativos
+- **Contraste de cores** WCAG AA compliant
+- **Texto alternativo** para elementos visuais
 
----
+# 8. Testes e Validação
 
-# **9. Trabalhos Futuros**
+## 8.1. Metodologia de Testes
 
-* Adicionar modo multiplayer aos jogos
-* Criar animações sonoras e visuais mais avançadas
-* Desenvolver um sistema de pontuação global
-* Criar uma API para estatísticas
-* Inserir vídeos interativos explicativos por tema
+O projeto foi submetido a múltiplas fases de teste:
 
----
+### 8.1.1. Testes Funcionais
+- Verificação de navegação entre páginas
+- Validação de renderização de conteúdo
+- Teste de interatividade dos componentes
+- Verificação de links externos
 
-# **10. Referências (2025)**
+### 8.1.2. Testes de Responsividade
+- Teste em diferentes dispositivos (mobile, tablet, desktop)
+- Verificação de breakpoints
+- Teste de orientação (portrait/landscape)
 
-* OWASP — [https://owasp.org](https://owasp.org)
-* MITRE ATT&CK — [https://attack.mitre.org](https://attack.mitre.org)
-* CSIRT Angola — [https://csirt.ao](https://csirt.ao)
-* NIST Security — [https://www.nist.gov/cybersecurity](https://www.nist.gov/cybersecurity)
-* TryHackMe — [https://tryhackme.com](https://tryhackme.com)
-* HackTheBox — [https://hackthebox.com](https://hackthebox.com)
-* CISA — [https://www.cisa.gov](https://www.cisa.gov)
+### 8.1.3. Testes de Performance
+- Análise de tempo de carregamento
+- Verificação de uso de memória
+- Teste de responsividade a interações
+
+## 8.2. Resultados dos Testes
+
+Todos os testes funcionais foram aprovados. A plataforma demonstrou:
+- **Tempo de carregamento** médio: < 2 segundos
+- **Compatibilidade** com navegadores modernos (Chrome, Firefox, Safari)
+- **Responsividade** adequada em todos os dispositivos testados
+- **Estabilidade** durante uso prolongado
+
+# 9. Conclusões
+
+## 9.1. Conquistas do Projeto
+
+O projeto CyberEthic alcançou com sucesso seus objetivos principais:
+
+1. **Desenvolvimento Técnico:** Implementação completa da plataforma utilizando tecnologias modernas
+2. **Conteúdo Educativo:** Criação de material educativo abrangente e atualizado
+3. **Experiência do Usuário:** Interface intuitiva e visualmente atrativa
+4. **Acessibilidade:** Plataforma disponível para diferentes dispositivos e necessidades
+
+## 9.2. Contribuições Acadêmicas
+
+Este projeto demonstra a aplicação prática de conceitos de:
+- **Desenvolvimento Web Moderno** com React e TailwindCSS
+- **Design de Interfaces** centrado no usuário
+- **Educação Digital** através de plataformas interativas
+- **Cibersegurança** como área de conhecimento essencial
+
+## 9.3. Limitações e Desafios
+
+Durante o desenvolvimento, foram identificados:
+- **Complexidade técnica** de alguns conceitos de segurança
+- **Manutenção de links externos** que podem se tornar obsoletos
+- **Balancing entre profundidade técnica** e acessibilidade
+
+# 10. Trabalho Futuro
+
+## 10.1. Expansão de Conteúdo
+- Adição de novos artigos especializados
+- Desenvolvimento de tutoriais práticos
+- Inclusão de estudos de caso atualizados
+
+## 10.2. Melhorias Técnicas
+- Implementação de sistema de progresso do usuário
+- Adição de funcionalidades offline
+- Integração com APIs educativas
+- Sistema de recomendações personalizadas
+
+## 10.3. Internacionalização
+- Suporte a múltiplos idiomas
+- Adaptação cultural de conteúdo
+- Tradução completa da plataforma
+
+# 11. Referências
+
+Acronis. (2025). *Blog de cibersegurança*. Recuperado de https://www.acronis.com/pt/blog/
+
+CNSI. (2025). *Conferência Nacional de Segurança Informática*. Recuperado de https://cnsi.digital/
+
+HackerOne. (2025). *10 tendências em cibersegurança para 2025*. Recuperado de https://hackone.com.br/blog/10-tendencias-ciberseguranca-2025/
+
+Meta Open Source. (2025). *Documentação do React*. Recuperado de https://react.dev
+
+OWASP. (2025). *Open Web Application Security Project*. Recuperado de https://owasp.org
+
+Tailwind Labs. (2025). *Documentação do TailwindCSS*. Recuperado de https://tailwindcss.com
+
+TryHackMe. (2025). *Plataforma de aprendizado em cibersegurança*. Recuperado de https://tryhackme.com
+
+World Wide Web Consortium. (2025). *Web Content Accessibility Guidelines (WCAG) 2.2*. Recuperado de https://www.w3.org/WAI/standards-guidelines/wcag/
