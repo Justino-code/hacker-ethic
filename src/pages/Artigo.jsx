@@ -178,7 +178,7 @@ export default function Artigos() {
                 Quer aprender mais?
               </h2>
               <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
-                Continue sua jornada explorando nossos áudios, vídeos e jogos educativos.
+                Continue sua jornada explorando nossos áudios e vídeos.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Link

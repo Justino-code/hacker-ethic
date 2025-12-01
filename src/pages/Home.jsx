@@ -19,13 +19,6 @@ export default function Home() {
       link: "/audio"
     },
     {
-      icon: <FaGamepad className="text-xl sm:text-2xl" />,
-      title: "Jogos Educativos",
-      description: "Mini-jogos que simulam desafios de segurança digital.",
-      color: "from-purple-500 to-pink-500",
-      link: "/jogos"
-    },
-    {
       icon: <FaUsers className="text-xl sm:text-2xl" />,
       title: "Comunidade",
       description: "Comunidade para aprender técnicas éticas colaborativamente.",

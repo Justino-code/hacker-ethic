@@ -346,12 +346,6 @@ export default function Audio() {
               >
                 Ler Artigos
               </Link>
-              <Link
-                to="/jogos"
-                className="px-4 sm:px-5 py-2 border border-green-500/30 text-green-400 rounded-lg hover:bg-green-500/10 transition-all duration-300 text-xs sm:text-sm"
-              >
-                Jogos Educativos
-              </Link>
             </div>
           </div>
         </div>

@@ -98,22 +98,6 @@ export default function Video() {
             </div>
           ))}
         </section>
-
-        {/* Call to Action */}
-        <section className="text-center mt-8 sm:mt-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-neon-cyan mb-3 sm:mb-4">
-            Continue sua jornada
-          </h2>
-          <p className="text-gray-300 text-sm sm:text-base mb-4 sm:mb-6 max-w-2xl mx-auto">
-            Explore nossos jogos educativos para testar seus conhecimentos de hacking ético.
-          </p>
-          <Link
-            to="/jogos"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-[#00E5FF] to-[#00FF88] text-[#0D0D0D] font-bold rounded-lg shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-          >
-            Jogar Agora
-          </Link>
-        </section>
       </div>
     </div>
   );
