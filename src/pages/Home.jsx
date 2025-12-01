@@ -42,7 +42,7 @@ export default function Home() {
           <div className="text-center w-full">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                CyberEthic
+                Hacking Ethic
               </span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4">

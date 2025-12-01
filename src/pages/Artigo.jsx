@@ -8,7 +8,7 @@ const ArtigoPlaceholder = ({ titulo }) => (
     <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">
       <div className="flex items-center gap-2">
         <FaUser className="text-xs sm:text-sm" />
-        <span>Autor CyberEthic</span>
+        <span>Autor Hacking Ethic</span>
       </div>
       <div className="flex items-center gap-2">
         <FaClock className="text-xs sm:text-sm" />

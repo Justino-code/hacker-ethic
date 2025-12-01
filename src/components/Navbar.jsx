@@ -38,10 +38,10 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-green-400 rounded flex items-center justify-center shadow group-hover:shadow-cyan-400/25 transition-all duration-300">
-              <span className="text-[#0A192F] font-bold text-sm">CE</span>
+              <span className="text-[#0A192F] font-bold text-sm">HE</span>
             </div>
             <h1 className="text-lg sm:text-xl font-bold font-mono text-[#00E5FF] group-hover:text-[#00FF88] transition-colors duration-300 whitespace-nowrap truncate max-w-[120px] sm:max-w-none">
-              CyberEthic
+              Hacking Ethic
             </h1>
           </Link>
 
